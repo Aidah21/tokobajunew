@@ -1,10 +1,7 @@
 <?php 
 
 class c_koneksi {
-
-
-
-    public function conn() {
+     public function conn() {
         $conn = mysqli_connect("localhost", "root", "", "tokobaju");
         return $conn;
 

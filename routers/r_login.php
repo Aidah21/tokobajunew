@@ -26,11 +26,11 @@ try {
         $email = $_POST["email"];
         $pass = $_POST["pass"];
 
-        if($email != $pass) {
-            echo "<script> alert('Password/Email SALAH!');
-            document.location.href = '../index.php';
-            </script>";
-        }
+        // if($email != $pass) {
+        //     echo "<script> alert('Password/Email SALAH!');
+        //     document.location.href = '../index.php';
+        //     </script>";
+        // }
         
         $login->login($email, $pass);
     }elseif ($_GET["aksi"] == "logout") {
