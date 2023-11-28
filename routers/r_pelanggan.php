@@ -22,7 +22,7 @@ if ($_GET["aksi"] == "tambah") {
     $jumlah_barang = $_POST["jumlah_barang"];
     $harga = $_POST["harga"];
    
-    $pelanggan->inner($id, $nama_pelanggan, $jumlah_barang, $harga);
+    $pelanggan->update($id, $nama_pelanggan, $jumlah_barang, $harga);
 
     if ($pelanggan) {
         echo "<script> alert('Data berhasil di ubah');
