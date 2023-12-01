@@ -199,15 +199,15 @@ $pelanggan = new c_pelanggan();
                     <span class="text">Tambah data</span>
                 </a>
             </div>
-           <!-- <div style="text-align: left;">
+            <div style="text-align: left;">
                 <div class="my-2"></div>
-                <a href="laporan.php" target="_blank" class="btn btn-success btn-icon-split">
+                <a href="v_laporan_pelanggan.php" target="_blank" class="btn btn-success btn-icon-split">
                     <span class="icon text-white-50">
                         <i class="fas fa-download"></i>
                     </span>
                     <span class="text">Generate Laporan</span>
                 </a>
-            </div>-->
+            </div>
             <br>
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
@@ -259,22 +259,15 @@ $pelanggan = new c_pelanggan();
         
                                 <?php 
                                  
-                                  $nomor = 1;
-                                //   $total=0;
+                                  //$nomor = 1;
                                  foreach ($pelanggan->inner() as $p ) : 
-                                    // $total += $p->harga;
-
                                     ?>
-                            
-                                    <tr>
-                                    
-                                        <td><?= $nomor++; ?></td>
+                                 <tr>
+                                        <td><?= $i; ?></td>
                                         <td><?= $p->nama_pelanggan ?></td>
                                         <td><?= $p->jumlah_barang ?></td>
-                                        <td><?= $p->harga ?></td>
+                                        <td><?= 'Rp. ' . number_format($p->harga, 0, '', '.'); ?></td>
                                         <td><?= $p->nama_barang ?></td>
-                                        <!-- <td><?= $p->total ?></td> -->
-                                        <!-- <td><?= $p->harga_barang?></td> -->
                                         
                                         <td>
                                             <a href="v_edit_pelanggan.php?id=<?= $p->id ?>" class="btn btn-info btn-circle btn-sm">

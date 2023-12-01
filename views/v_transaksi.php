@@ -207,7 +207,7 @@ $baru = new c_transaksi();
             </div>
             <div style="text-align: left;">
                 <div class="my-2"></div>
-                <a href="v_laporan.php" target="_blank" class="btn btn-success btn-icon-split">
+                <a href="v_laporan_transaksi.php" target="_blank" class="btn btn-success btn-icon-split">
                     <span class="icon text-white-50">
                         <i class="fas fa-download"></i>
                     </span>
@@ -315,7 +315,7 @@ $baru = new c_transaksi();
                                         <td><?= $i; ?></td>
                                         <td><?= $read->jumlah_pelanggan ?></td>
                                         <td><?= $read->jumlah_barang ?></td>
-                                        <td><?= $read->pemasukan?></td>
+                                        <td><?= 'Rp. ' . number_format($read->pemasukan, 0, '', '.'); ?></td>
                                        
                             
                                         <td>

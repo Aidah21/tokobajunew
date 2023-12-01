@@ -200,7 +200,7 @@ $baru = new c_barang();
             </div>
             <div style="text-align: left;">
                 <div class="my-2"></div>
-                <a href="v_laporan.php" target="_blank" class="btn btn-success btn-icon-split">
+                <a href="v_laporan_baju.php" target="_blank" class="btn btn-success btn-icon-split">
                     <span class="icon text-white-50">
                         <i class="fas fa-download"></i>
                     </span>

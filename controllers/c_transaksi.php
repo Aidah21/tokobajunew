@@ -4,7 +4,7 @@ include_once "c_koneksi.php";
 class c_transaksi
 {
 
-    public function insert($id, $jumlah_pelanggan, $jumlah_barang, $pemasuka)
+    public function insert($id, $jumlah_pelanggan, $jumlah_barang, $pemasukan)
     {
         
         $conn = new c_koneksi();
